@@ -1,4 +1,3 @@
-=====
 # Alibaba Cloud SLB Terraform Root Module
 
 This root module is designed to create and manage **SLB (Server Load Balancer)** resources on Alibaba Cloud Stack. By encapsulating the underlying SLB submodules, it provides a clean, secure, and declarative interface aligned with Infrastructure-as-Code (IaC) best practices. Users need not interact directly with submodule paths or handle reuse logic—common tasks such as creating a load balancer, configuring listeners, and attaching backend servers can be accomplished by configuring only core parameters.

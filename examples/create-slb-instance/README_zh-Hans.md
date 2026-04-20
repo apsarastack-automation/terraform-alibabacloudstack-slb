@@ -1,4 +1,3 @@
-=====
 # 创建 SLB 实例示例
 
 此示例演示如何使用 `slb_instance` 子模块在阿里云专有云（Alibaba Cloud Stack）上创建基础 SLB（负载均衡）实例。
