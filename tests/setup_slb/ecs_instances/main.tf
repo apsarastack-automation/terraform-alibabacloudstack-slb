@@ -4,10 +4,14 @@ data "alibabacloudstack_images" "default" {
   owners      = "system"
 }
 
+data "alibabacloudstack_zones" "default" {
+  available_resource_creation = "VSwitch"
+  enable_details             = true
+}
+
 data "alibabacloudstack_instance_types" "default" {
-  availability_zone = var.zone_id
-  cpu_core_count    = 1
-  memory_size       = 1
+  availability_zone = data.alibabacloudstack_zones.default.zones[0].id
+  sorted_by         = "CPU"
 }
 
 resource "alibabacloudstack_ecs_securitygroup" "default" {
@@ -33,5 +37,6 @@ resource "alibabacloudstack_ecs_instance" "web" {
   vswitch_id        = var.vswitch_id
   security_groups   = [alibabacloudstack_ecs_securitygroup.default.id]
   instance_name     = "${var.name}-web-${count.index + 1}"
+  system_disk_category = length(data.alibabacloudstack_zones.default.zones) > 0 && length(data.alibabacloudstack_zones.default.zones[0].available_disk_categories) > 0 ? data.alibabacloudstack_zones.default.zones[0].available_disk_categories[0] : "cloud_efficiency"
   system_disk_size  = 20
 }
