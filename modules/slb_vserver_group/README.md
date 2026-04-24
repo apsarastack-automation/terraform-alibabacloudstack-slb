@@ -1,4 +1,3 @@
-=====
 # Alibaba Cloud SLB VServer Group Terraform Module
 
 This module creates and manages **SLB (Server Load Balancer) Virtual Server Groups** on Alibaba Cloud Stack, allowing flexible organization of backend servers into logical groups for traffic distribution.

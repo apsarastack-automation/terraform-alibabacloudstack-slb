@@ -1,4 +1,3 @@
-=====
 # Create SLB Instance Example
 
 This example demonstrates how to create a basic SLB (Server Load Balancer) instance on Alibaba Cloud Stack using the `slb_instance` submodule.

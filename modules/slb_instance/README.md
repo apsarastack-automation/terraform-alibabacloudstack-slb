@@ -1,4 +1,3 @@
-=====
 # Alibaba Cloud SLB Instance Terraform Module
 
 This module creates and manages **SLB (Server Load Balancer) instances** on Alibaba Cloud Stack, supporting flexible network configuration, specification selection, and tagging capabilities.

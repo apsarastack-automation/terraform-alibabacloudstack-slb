@@ -1,4 +1,3 @@
-=====
 # Create SLB with VServer Group Example
 
 This example demonstrates how to create an SLB (Server Load Balancer) with virtual server groups on Alibaba Cloud Stack.
