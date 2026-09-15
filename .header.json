@@ -1,0 +1,14 @@
+{
+  "title": {
+    "zh-Hans": "SLB负载均衡模块",
+    "en-US": "SLB Load Balancer Module"
+  },
+  "overview": {
+    "zh-Hans": "该模块用于创建和管理阿里云SLB负载均衡实例。",
+    "en-US": "This module is used to create and manage Alibaba Cloud SLB (Server Load Balancer) instances."
+  },
+  "description": {
+    "zh-Hans": "SLB负载均衡模块支持创建负载均衡实例、配置HTTP/HTTPS/TCP/UDP监听、挂载后端服务器、虚拟服务器组以及访问控制列表(ACL)和SSL证书。",
+    "en-US": "The SLB module supports creating load balancer instances, configuring HTTP/HTTPS/TCP/UDP listeners, attaching backend servers, virtual server groups, access control lists (ACLs), and SSL certificates."
+  }
+}
