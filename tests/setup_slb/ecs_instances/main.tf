@@ -1,3 +1,4 @@
+# most_recent=true makes images[0] deterministic; no check block needed
 data "alibabacloudstack_images" "default" {
   name_regex  = "^ubuntu_"
   most_recent = true
